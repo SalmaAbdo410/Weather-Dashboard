@@ -6,7 +6,7 @@ from datetime import datetime
 # --- Load Data ---
 @st.cache_data
 def load_data():
-    df = pd.read_csv(r"C:\WEATHER\Cairo-Weather-clean (1).csv")
+   df = pd.read_csv("Cairo-Weather-clean (1).csv")
     df = df.dropna(axis=1, how='all')
     
     # Convert date columns
@@ -259,4 +259,5 @@ st.markdown("""
 **How to read these heatmaps:**
 - 🔥 Warmer temperatures shown in yellow/Orange
 - ❄️ Cooler temperatures shown in blue/purple
+
 """)
